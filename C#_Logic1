@@ -1,0 +1,15 @@
+using System;
+class Cars{
+static void Main(string[] args){
+
+string myquery="How are you ?" ;
+string yourquery ="How are you ?";
+if(myquery == yourquery){
+Console.WriteLine("Mr Mall Is Nice and Good.");
+}
+else{
+Console.WriteLine("Mr Mall Is not Nice and Good.");
+}
+}
+}
+
