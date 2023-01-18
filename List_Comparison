@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Demo {
+   public static void Main() {
+      List < string > list1 = new List < string > ();
+      list1.Add("P");
+      list1.Add("Q");
+      list1.Add("R");
+
+      Console.WriteLine("First list...");
+      foreach(string value in list1) {
+         Console.WriteLine(value);
+      }
+
+      Console.WriteLine("Second list...");
+      List < string > list2 = new List < string > ();
+
+      list2.Add("P");
+      list2.Add("R");
+      foreach(string value in list2) {
+         Console.WriteLine(value);
+      }
+
+      Console.WriteLine("Difference in the two lists...");
+      IEnumerable < string > list3;
+      list3 = list1.Except(list2);
+      foreach(string value in list3) {
+         Console.WriteLine(value);
+      }
+   }
+}
